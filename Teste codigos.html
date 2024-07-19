@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleitamento Materno</title>
+    <link rel="icon" href="img/epre.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(https://i.pinimg.com/564x/1e/49/f6/1e49f6facbc5149eb044a71b3aad4b4a.jpg);
+            margin: 50px;
+            color: black;
+            text-align: center;
+            text-align: justify; /* Justificar todo o texto */
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 10px 15px;
+            background-color: #ffd700; /* Cor dourada forte */
+            border-radius: 20px;
+            width: fit-content;
+            color: black;
+            font-size: 2rem;
+            margin: auto;
+            line-height: 150px; /* Ajuste para ficar na mesma altura que a logo */
+        }
+
+        header p {
+            background-color: #ffd700; /* Cor dourada forte */
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: fit-content;
+            margin: 10px auto;
+        }
+
+        nav {
+            background-color: #FFD700;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .menu img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffbf00;
+        }
+
+        nav .search-container {
+            display: flex;
+            align-items: center;
+            background-color: #FFD700;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        nav .search-container input {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 1rem;
+            color: black;
+        }
+
+        nav .search-container button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            color: black;
+        }
+
+        .fotos {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .fotos figure {
+            text-align: center;
+        }
+
+        .pagination {
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        .pagination button:hover {
+            background-color: #ffbf00;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .fotos img {
+            width: 175px;
+            height: 170px;
+            object-fit: cover;
+            border: 2px solid gold;
+            border-radius: 8px;
+        }
+
+        .beneficios {
+            margin-top: 20px;
+            background-color: rgba(255, 192, 203, 0.8);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left; /* Alinhar texto à esquerda */
+        }
+
+        .beneficios ul,
+        .beneficios p {
+            text-align: justify; /* Justificar o texto dentro das divs .beneficios */
+        }
+
+        .beneficios ul {
+            padding-left: 20px; /* Adicionar recuo para listas */
+            list-style-type: disc; /* Usar marcadores de bolinha */
+        }
+
+        .beneficios li {
+            margin-bottom: 10px;
+        }
+
+        .center-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .center-button a {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .formulario-container {
+            text-align: center; /* Centralizar o conteúdo do formulário */
+        }
+
+        .formulario-container iframe {
+            width: 100%; /* Garantir que o iframe do formulário ocupe toda a largura disponível */
+            max-width: 640px; /* Limitar a largura máxima do iframe */
+            height: 700px; /* Altura fixa do iframe */
+            border: none; /* Remover borda do iframe */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1>Viva o Aleitamento</h1>
+        <p>Bem-vindo ao nosso site, seu portal de informações e apoio sobre aleitamento materno.</p>
+    </header>
+    <nav>
+        <div class="menu">
+            <img src="menu_icon.png" alt="Menu Icon">
+            <a href="#">Missão e Visão</a>
+            <a href="#">Benefícios do Aleitamento Materno</a>
+            <a href="#">Amamentação e Prevenção de Doenças</a>
+            <a href="#">Dicas para Amamentação</a>
+            <a href="#">Grupo de Apoio</a>
+            <a href="#">Vídeos/Entrevistas</a>
+            <a href="#">Doação de Leite</a>
+            <a href="#">Banco de leite materno</a>
+            <a href="#">Prevenções</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="O que você precisa?">
+            <button>🔍</button>
+        </div>
+    </nav>
+</body>
+</html>
+
+<body>
+
+<header>
+<figure>
+<img src="img/epre.png" alt="Bebês sorrindo">
+<figcaption></figcaption>
+</figure>
+<h1>Viva o Aleitamento</h1>
+<p>Bem-vindo ao nosso site, seu portal de informações e apoio sobre aleitamento materno.</p>
+</header>
+
+<nav>
+<a href="#missao">Missão e Visão</a> |
+<a href="#beneficios">Benefícios do Aleitamento Materno</a> |
+<a href="#prevencao">Amamentação e Prevenção de Doenças</a> |
+<a href="#dicas">Dicas para Amamentação</a> |
+<a href="#grupo">Grupo de Apoio</a> |
+<a href="#videos">Vídeos/Entrevistas</a> |
+<a href="#doacao">Doação de Leite</a> |
+<a href="#banco">Banco de leite materno</a> |
+<a href="#Prevenções">Prevenções</a> |
+</nav>
+
+<div class="page active" id="page1">
+<!-- Conteúdo da primeira página -->
+<div class="beneficios" id="missao">
+<h3>Missão e Visão</h3>
+<div class="mission-vision">
+<div class="mission-vision-text">
+<p>Nossa missão é promover a amamentação como um ato natural e vital, oferecendo recursos e suporte às mães em sua jornada.</p>
+<p>Nossa visão é uma sociedade onde todas as crianças têm acesso ao melhor começo de vida possível através do aleitamento materno.</p>
+</div>
+</div>
+</div>
+
+<div class="beneficios" id="beneficios">
+<h3>Benefícios do Aleitamento Materno</h3>
+<ul>
+<li>Para o Bebê: "O leite materno é a nutrição perfeita para o bebê, contendo todos os nutrientes necessários para um crescimento saudável."</li>
+<li>Para a Mãe: "Amamentar ajuda a mãe a se recuperar mais rapidamente do parto e fortalece o vínculo emocional com o bebê."</li>
+</ul>
+</div>
+
+<div class="fotos">
+<figure>
+<img src="img/BONS.jpg" alt="Bebês sorrindo">
+<figcaption></figcaption>
+</figure>
+<figure>
+<img src="img/elas.jpg" alt="Mãe e bebê">
+<figcaption></figcaption>
+</figure>
+<figure>
+<img src="img/juntos.jpg" alt="Família unida">
+<figcaption></figcaption>
+</figure>
+<figure>
+<img src="img/felizes.jpg" alt="Bebês felizes">
+<figcaption></figcaption>
+</figure>
+<figure>
+<img src="img/peq.jpg" alt="Bebê pequeno">
+<figcaption></figcaption>
+</figure>
+</div>
+
+<div class="beneficios" id="prevencao">
+<h3>Amamentação e Prevenção de Doenças</h3>
+<ul>
+<li>A amamentação pode reduzir o risco de câncer de mama e ovário.</li>
+<li>Para o bebê, diminui as chances de desenvolver obesidade, diabetes e alergias.</li>
+</ul>
+</div>
+
+<div class="beneficios" id="dicas">
+<h3>Dicas para Amamentação</h3>
+<ul>
+<li><strong>Primeiros Passos:</strong> Comece a amamentar o mais cedo possível após o nascimento para estimular a produção de leite e ajudar o bebê a aprender a mamar.</li>
+<li><strong>Posicionamento e Pega:</strong> "Certifique-se de que o bebê esteja bem posicionado e com a pega correta para evitar desconforto e garantir a eficiência da amamentação.</li>
+<li><strong>Frequência das Mamadas:</strong> "Amamente sob demanda, sempre que o bebê mostrar sinais de fome. Isso ajuda a manter a produção de leite e atende às necessidades nutricionais do bebê.</li>
+</ul>
+</div>
+
+<div class="beneficios" id="grupo">
+<h3>Grupo de Apoio</h3>
+<ul>
+<p>Enfermeira Obstetra e Consultora de Amamentação: Localizado em Timbó, SC,
+o Espaço Gestar & Maternar oferece suporte integral às mães durante a gestação,
+parto pós-parto e amamentação. Sob a liderança de Ana Sibilia Dallabona, Mestra
+em Saúde Materno Infantil e Enfermeira Obstétrica (COREN 346996), o espaço oferece
+serviços especializados como doula, consultoria em amamentação, laserterapia pós-parto,
+cuidados com o bebê e colocação de brincos.</p>
+</ul>
+<ul>
+<p>Enfermeira Obstetra: Ana Sibilia Dallabona.</p>
+<p>Endereço: R. Blumenau, 1421 - Timbó - SC.</p>
+<p>Telefone: (47) 99143-9234</p>
+<p>Instagram: <a href="https://www.instagram.com/anasibiladallabona/" target="_blank">anasibiladallabona</a></p>
+<p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5547991439234" target="_blank">Enviar mensagem</a></p>
+</ul>
+</div>
+
+<div class="beneficios" id="videos">
+<h3>Vídeos/Entrevistas</h3>
+<div class="fotos">
+<video width="320" height="240" controls>
+<source src="video/Aleitamento Materno.mp4" type="video/mp4">
+</video>
+<video width="320" height="240" controls>
+<source src="video/videoplayback.mp4" type="video/mp4">
+</video>
+</div>
+
+<h3>Entrevista em PDF</h3>
+<div class="center-button">
+<a href="pdf/mae.pdf" target="_blank">Baixar Entrevista</a>
+</div>
+</div>
+
+<div class="beneficios" id="doacao">
+<h3>Doação de leite</h3>
+<p>A doação de leite materno é um gesto essencial de solidariedade, permitindo que mães saudáveis compartilhem seu leite com bebês prematuros ou cujas mães
+têm dificuldade na produção de leite. Esse ato fornece nutrição vital e imunidade, crucial para a recuperação e desenvolvimento saudável dos bebês, reduzindo
+infecções e problemas de saúde. As mães doadoras passam por rigorosa triagem para garantir a segurança e qualidade do leite, promovendo uma rede de apoio e empatia.
+Bancos de leite e instituições de saúde em todo o mundo incentivam e facilitam a doação para assegurar que mães e bebês tenham acesso a esse recurso vital.</p>
+</div>
+
+<div class="beneficios" id="banco">
+<h3>Banco de leite Materno</h3>
+<p>O Banco de Leite Humano (BLH) de Blumenau é uma instituição dedicada à coleta, processamento, controle de qualidade e distribuição de leite materno para bebês
+prematuros, de baixo peso ou que não podem ser amamentados por suas mães biológicas. Este serviço essencial proporciona um suporte vital para a nutrição e
+desenvolvimento saudável dos recém-nascidos que necessitam desse recurso.</p>
+
+<h3>Principais Funções do Banco de Leite Materno de Blumenau:</h3>
+<ol>
+<li>Coleta de Leite Humano: As mães que têm leite excedente podem doar para o banco. A coleta pode ser feita no próprio banco ou em domicílio, através de visitas programadas por profissionais de saúde.</li>
+<li>Processamento e Controle de Qualidade: Após a coleta, o leite passa por um rigoroso processo de pasteurização e análise para garantir que esteja livre de contaminantes e com qualidade nutricional preservada.</li>
+<li>Armazenamento e Distribuição: O leite pasteurizado é armazenado em condições adequadas e distribuído conforme a necessidade dos hospitais e unidades neonatais da região, seguindo critérios de prioridade médica.</li>
+<li>Apoio e Orientação às Mães: Além da coleta e distribuição de leite, o BLH oferece suporte e orientação para as mães sobre a importância da amamentação e técnicas para a correta extração e conservação do leite.</li>
+</ol>
+
+<div class="beneficios">
+<h3>Como Doar:</h3>
+<p>As mães interessadas em doar leite podem entrar em contato com o Banco de Leite Humano de Blumenau para receber orientações sobre o processo de doação.
+O banco fornece todos os materiais necessários para a coleta e armazenamento do leite, e as doadoras passam por uma avaliação para garantir a segurança do leite
+doado.</p>
+</div>
+</div>
+
+<div class="beneficios" id="Prevenções">
+<h3>Prevenção de Câncer e Outras Doenças</h3>
+<p>A amamentação tem sido amplamente estudada e demonstrada como uma prática benéfica para a saúde da mãe e do bebê. Para a mãe, amamentar
+pode reduzir significativamente o risco de desenvolver câncer de mama e ovário. Além disso, há evidências de que a amamentação pode diminuir a
+incidência de diabetes tipo 2, hipertensão e doenças cardiovasculares. Para o bebê, os benefícios incluem uma menor probabilidade de desenvolver
+obesidade, diabetes tipo 1 e 2, e alergias ao longo da vida.</p>
+
+<div class="beneficios">
+<h4>Dicas para uma Amamentação Bem-Sucedida</h4>
+<p>Uma amamentação bem-sucedida começa com a correta pega e posicionamento do bebê. Certifique-se de que a boca do bebê abranja boa parte da aréola,
+não apenas o mamilo. Amamente sob demanda, sempre que o bebê mostrar sinais de fome, como mover a cabeça de um lado para o outro ou colocar as mãos na boca.
+Mantenha-se hidratada e bem alimentada para garantir uma produção adequada de leite.</p>
+</div>
+</div>
+</div>
+
+<!-- Página 2 -->
+<div class="page" id="page2">
+<div class="beneficios formulario-container" id="formulario">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSceTTq1yYiYMeRTGM69fPARks3N596x70sI-_IvAb-e-spZgg/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+</div>
+</div>
+
+<!-- Paginação -->
+<div class="pagination">
+<button class="go-to-page active" data-page="page1">1</button>
+<button class="go-to-page" data-page="page2">2</button>
+</div>
+
+<script>
+document.querySelectorAll('.go-to-page').forEach(button => {
+button.addEventListener('click', () => {
+document.querySelectorAll('.page').forEach(page => {
+page.classList.remove('active');
+});
+document.getElementById(button.getAttribute('data-page')).classList.add('active');
+document.querySelectorAll('.go-to-page').forEach(btn => {
+btn.classList.remove('active');
+});
+button.classList.add('active');
+});
+});
+</script>
+
+</body>
+
+</html>
